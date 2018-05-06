@@ -1,24 +1,17 @@
-# README
+Conteudo
+=========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+Load some categories and articles from Contentful
 
-Things you may want to cover:
+## Dependencies
+* Docker-compose version 1.21.1
 
-* Ruby version
+## Running application
+First you should paste the `ACCESS_TOKEN` and the `SPACE_ID` id to .env.development then you can start running the following command:
 
-* System dependencies
+``` sh
+docker-compose up
+```
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

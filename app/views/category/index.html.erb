@@ -1,0 +1,15 @@
+<div class="blue accent-1">
+  <% @categories.each do |category| %>
+    <div class="row card">
+      <%= link_to category_path(category.id) do %>
+        <div class="col s1">
+          <img src=http:<%=category.icon.url%>>
+        </div>
+        <div class="col s4 black-text">
+          <h5><%=category.title%></h5>
+        </div>
+      <% end %>
+    </div>
+  <%end%>
+</div>
+

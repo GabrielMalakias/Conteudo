@@ -8,8 +8,13 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-  <body>
-    <%= yield %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <body class='blue lighten-5'>
+    <%= render 'menu' %>
+    <div class="container s12 offset-s1 col white z-depth-5">
+      <%= yield %>
+    </div>
   </body>
 </html>
