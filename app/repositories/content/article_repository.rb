@@ -8,7 +8,7 @@ module Content
       client.entries(content_type: 'article',
                      'fields.availableOn[match]' => 'infotoss.com',
                      'fields.categories.sys.id[in]' => category_id,
-                     'limit' => 9 ,
+                     'limit' => PER_PAGE ,
                      'skip' => offset,
                      'include' => 0)
     end
